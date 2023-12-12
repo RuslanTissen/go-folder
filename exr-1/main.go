@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	// adams := 42
-	// fmt.Printf(`42 is a bunary, %b\n`, adams)
-	// fmt.Printf(`42 is a bunary, %v\n`, adams)
+	adams := 42
+	fmt.Printf(`42 is a bunary, %b\n`, adams)
+	fmt.Printf(`42 is a bunary, %v\n`, adams)
 
 	a, b, c, d, e, f := 0, 1, 2, 3, 4, 5
 
