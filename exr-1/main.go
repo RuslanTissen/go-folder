@@ -2,24 +2,23 @@ package main
 
 import "fmt"
 
+type ByteSize int
+
 const (
-	_ = iota
-	a
-	b
-	c
-	d
-	e
-	f
+	_           = iota // ignore first value by assigning to blank identifier
+	KB ByteSize = 1 << (10 * iota)
+	MB
+	GB
+	TB
+	PB
+	EB
 )
 
 func main() {
-	fmt.Println(a, b, c, d, e ,f)
-	// fmt.Println(c3, c4, c5, c6)
-	fmt.Printf("%d \t %b\n", 1, 1)
-	fmt.Printf("%d \t %b\n", 1<<a, 1<<a)
-	fmt.Printf("%d \t %b\n", 1<<b, 1<<b)
-	fmt.Printf("%d \t %b\n", 1<<c, 1<<c)
-	fmt.Printf("%d \t %b\n", 1<<d, 1<<d)
-	fmt.Printf("%d \t %b\n", 1<<e, 1<<e)
-	fmt.Printf("%d \t %b\n", 1<<f, 1<<f)
+	fmt.Printf("%d \t %b\n", KB, KB)
+	fmt.Printf("%d \t %b\n", MB, MB)
+	fmt.Printf("%d \t %b\n", GB, GB)
+	fmt.Printf("%d \t %b\n", TB, TB)
+	fmt.Printf("%d \t %b\n", PB, PB)
+	fmt.Printf("%d \t %b\n", EB, EB)
 }
